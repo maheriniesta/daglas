@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font awesome 6 -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- Bootstrap 5.2 CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Daghlas Design | Home</title>
+  </head>
+  <body>
+    <!-- start navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent" id="navbar">
+      <div class="container">
+        <a class="navbar-brand py-0 " href="#"
+          ><img src="assets/images/logo.png" class="w-25" alt=""
+        /></a>
+        <button
+          class="navbar-toggler "
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-we-work">how we work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar  -->
+    <!-- start header -->
+
+    <div class="app" id="top">
+      <div class="cardList">
+        <button class="cardList__btn btn btn--left">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-left"></use>
+            </svg>
+          </div>
+        </button>
+
+        <div class="cards__wrapper">
+          <div class="card current--card">
+            <div class="card__image">
+              <img
+                src="assets/images/header-slider/edited/illustrated/111-01.jpg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="card next--card">
+            <div class="card__image">
+              <img
+                src="assets/images/header-slider/edited/illustrated/aaa.jpg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="card previous--card">
+            <div class="card__image">
+              <img
+                src="assets/images/header-slider/edited/illustrated/999.jpg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <button class="cardList__btn btn btn--right">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <div class="infoList">
+        <div class="info__wrapper">
+          <div class="info current--info">
+            <h1 class="text name">Internal</h1>
+            <h4 class="text location">Design</h4>
+            <!-- <p class="text description">I create places that connect, sustain & inspire.</p> -->
+          </div>
+
+          <div class="info next--info">
+            <h1 class="text name">Dining</h1>
+            <h4 class="text location">Tables</h4>
+            <!-- <p class="text description">Love the space you're in</p> -->
+          </div>
+
+          <div class="info previous--info">
+            <h1 class="text name">Salons</h1>
+            <h4 class="text location">Designs</h4>
+            <!-- <p class="text description">Make room for better living</p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="app__bg">
+        <div class="app__bg__image current--image">
+          <img
+            src="assets/images/header-slider/edited/illustrated/111-01.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+        <div class="app__bg__image next--image">
+          <img
+            src="assets/images/header-slider/edited/illustrated/aaa.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+        <div class="app__bg__image previous--image">
+          <img
+            src="assets/images/header-slider/edited/illustrated/999.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+        
+      </div>
+    </div>
+    <svg class="icons" style="display: none">
+      <symbol
+        id="arrow-left"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <polyline
+          points="328 112 184 256 328 400"
+          style="
+            fill: none;
+            stroke: #fff;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 48px;
+          "
+        />
+      </symbol>
+      <symbol
+        id="arrow-right"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <polyline
+          points="184 112 328 256 184 400"
+          style="
+            fill: none;
+            stroke: #fff;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 48px;
+          "
+        />
+      </symbol>
+    </svg>
+    <!-- start about  -->
+    <section class="about reveal" id="about">
+      <div class="title text-center">
+        <h2 class="heading">about us</h2>
+        <p class="sub-heading">
+          Fresh, Authentic, Personal Interiors! <br />
+          With more than 13 years experience in Interior Design
+        </p>
+      </div>
+      <div class="container">
+        <div class="row pt-5 align-items-center">
+          <div class="col-md-5 d-none d-lg-block">
+            <div class="item about-image about-reveal text-end">
+              <img
+                src="assets/images/about.jpeg"
+                class=" w-100"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 ">
+            <div class="item about-text about-reveal">
+              <h2 class="designer-name">daghlas design</h2>
+              <p class="bio">
+                Daghlas Design is something other than an interior design
+                organization, we control structures and mixes from our regular
+                world to make a stylish, down-to-earth, and practical
+                environment that changes a straightforward building or space
+                into a position of bliss for you and your visitors. <br />
+                <br />
+                We have over 13 years of experience, our designers are prepared
+                to convey their skill to your home or office, explicitly custom
+                fitted to meet your requirements. <br />
+                <br />
+                Each work is an expert satisfaction, autonomous from the style,
+                size, or place. Every client has their taste and want and we
+                meet them with affection, bliss, and strategy.
+              </p>
+              <div class="social-icons mt-4">
+                <a href="https://wa.link/4uu970"
+                  ><i class="fa-brands fa-whatsapp whatsapp"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100054829885862"
+                  ><i class="fa-brands fa-facebook-f facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/daghlas_mohammad/?utm_medium=copy_link"
+                  ><i class="fa-brands fa-instagram instagram"></i
+                ></a>
+                <a
+                  href="https://www.snapchat.com/add/daghlas87?share_id=QjkxOTU3&locale=ar_PS@numbers=latn"
+                  ><i class="fa-brands fa-snapchat snapchat"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about  -->
+
+    <!-- start how we work  -->
+    <section class="how-we-work reveal" id="how-we-work">
+      <div class="title text-center reveal">
+        <h2 class="heading">how we work</h2>
+        <p class="sub-heading">
+          we see interior design as strategy in action, focusing on results.
+          <br />
+          we help my clients envision a better space, and we help them get there
+          successfully.
+        </p>
+      </div>
+      <div class="container-lg reveal">
+        <div class="row pt-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="item">
+              <i class="fa-regular fa-lightbulb"></i>
+              <h3>01 CONSULTATION</h3>
+              <p>
+                We listen to and understand our clients; this communication
+                helps to facilitate an interior design that often exceeds client
+                expectations.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="item">
+              <i class="fa-solid fa-tv"></i>
+              <h3>02 DESIGN DEVELOPMENT</h3>
+              <p>
+                Each interior design project is refined through a process of
+                fluid development with continuous, valuable input from our
+                clients.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="item">
+              <i class="fa-solid fa-gavel fa-flip-horizontal"></i>
+              <h3>03 PRESENTATION</h3>
+              <p>
+                Our interior design concepts, ideas and materials are revealed
+                to our clients in a way that is clearly understood.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="item">
+              <i class="fa-solid fa-trophy"></i>
+              <h3>04 ORDER & DELIVERY</h3>
+              <p>
+                Everything ordered and delivered on time is essential to us. We
+                handle every detail and we oversee the delivery and installation
+                of each item that we order.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end how we work  -->
+    <!-- start services and portfolio  -->
+    <div class="services reveal" id="services">
+      <div class="title text-center">
+        <h2 class="heading">our services</h2>
+        <p class="sub-heading">
+          We create places that connect, sustain & inspire. <br />
+          Take a look at our creative works!
+        </p>
+      </div>
+      <div class="container-lg">
+        <div class="row">
+          <div class="content col-md-4 ">
+            <a href="restaurants.html"
+              ><div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/restaurants.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">restaurants</h4>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="content col-md-4 ">
+            <a href="stores.html"
+              ><div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/shops.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">stores</h4>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="content col-md-4 ">
+            <a href="offices.html">
+              <div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/offices.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">offices</h4>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="content col-md-4 ">
+            <a href="bedrooms.html"
+              ><div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/bedroom.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">bedrooms</h4>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="content col-md-4 ">
+            <a href="dinings.html">
+              <div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/dining.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">dining tables</h4>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="content col-md-4 ">
+            <a href="kitchens.html" 
+              ><div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/kitchens.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">kitchens</h4>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="content col-md-4 ">
+            <a href="externals.html" >
+              <div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/external.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">externals</h4>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="content col-md-4 ">
+            <a href="internals.html" >
+              <div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/internal.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">internals</h4>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="content col-md-4 ">
+            <a href="bathrooms.html" >
+              <div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/bathroom.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">bathrooms</h4>
+                </div>
+              </div></a
+            >
+          </div>
+
+          <div class="content col-md-4 ">
+            <a href="roofs.html"
+              ><div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/roofs.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">roofs</h4>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="content col-md-4 ">
+            <a href="salons.html" >
+              <div class="item position-relative">
+                <div class="image-holder">
+                  <img
+                    src="assets/images/services/salon.jpg"
+                    class="w-100"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="service-title">salons</h4>
+                </div>
+              </div></a
+            >
+          </div>
+        </div>
+
+        <a href="#" id="loadMore">Load More</a>
+      </div>
+    </div>
+    <!-- end services and portfolio -->
+    <!-- start testimonials  -->
+    <div class="testimonials" id="testimonials">
+      <div class="title text-center">
+        <h2 class="heading">words from clients</h2>
+        <p class="sub-heading">
+          Read what actual users of our services have to say about their
+          experience!
+        </p>
+      </div>
+      <div class="container-lg">
+        <section class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user1.jpg" alt="card image" />
+              </div>
+
+              <div class="card__content">
+                <span class="card__title">Web Designer</span>
+                <span class="card__name">Vanessa Martinez</span>
+                <p class="card__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                  veritatis labore provident non tempora odio est sunt, ipsum
+                </p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user2.jpg" alt="card image" />
+              </div>
+
+              <div class="card__content">
+                <span class="card__title">Ui Designer</span>
+                <span class="card__name">Sarah Bowen</span>
+                <p class="card__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                  veritatis labore provident non tempora odio est sunt, ipsum
+                </p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user3.jpg" alt="card image" />
+              </div>
+
+              <div class="card__content">
+                <span class="card__title">Web Developer</span>
+                <span class="card__name">David Murphy</span>
+                <p class="card__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                  veritatis labore provident non tempora odio est sunt, ipsum
+                </p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user4.jpg" alt="card image" />
+              </div>
+
+              <div class="card__content">
+                <span class="card__title">Mobile Designer</span>
+                <span class="card__name">Kelsey West</span>
+                <p class="card__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                  veritatis labore provident non tempora odio est sunt, ipsum
+                </p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="/images/user1.jpg" alt="card image" />
+              </div>
+
+              <div class="card__content">
+                <span class="card__title">Web Designer</span>
+                <span class="card__name">Vanessa Martinez</span>
+                <p class="card__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                  veritatis labore provident non tempora odio est sunt, ipsum
+                </p>
+                <button class="card__btn">View More</button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- end testimonials  -->
+    <!-- start get in touch and footer -->
+    <div class="get-in-touch" id="contact">
+      <div class="title text-center">
+        <h2 class="heading">get in touch</h2>
+        <p class="sub-heading">To discuss us about work with us you can send us a message
+        </p>
+      </div>
+      <div class="container-lg">
+        
+            <div class="item left">
+              <form action="">
+                <ul class="list-unstyled">
+                  <li>
+                    <input
+                      class="w-100"
+                      type="text"
+                      placeholder="Name*"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <input
+                      class="w-100"
+                      type="email"
+                      placeholder="Email*"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <textarea
+                      class="w-100 h-50"
+                      name=""
+                      id=""
+                      placeholder="Message*"
+                    ></textarea>
+                  </li>
+                </ul>
+                <a href="#" class="text-uppercase mt-1 d-inline-block"
+                  >send message</a
+                >
+              </form>
+            </div>
+          </div>
+      </div>
+      <!-- start footer  -->
+    <footer class="footer pt-5">
+      <div class="container">
+          <h2 class="text-uppercase text-white mb-5 footer--h2"><img src="assets/images/logo.png"  alt=""></h2>
+          <div class="row">
+              <div class="col-lg-2 col-md-6">
+                  <div class="footer--item d-flex">
+                      <i class="fa-solid fa-location-dot footer--i  me-2 "></i>
+                      <p class="footer--pra"><a href="https://goo.gl/maps/UJZg9v3z3ZJhTiXJ9" target="_blank" class="text-white">Ramallah</a> </p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 ">
+                  <div class="footer--item d-flex justify-content-lg-center">
+                      <i class="fa-solid fa-phone footer--i  me-2"></i>
+                      <p class="footer--pra">Tel: <a href="tel:+970568500008" target="_blank" class="text-white">+970 568 500 008</a></p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="footer--item d-flex justify-content-lg-center">
+                      <i class="fa-solid fa-envelope footer--i me-2"></i>
+                      <p class="footer--pra">Emil: <a href="mailto:m-daghlas@hotmail.com" target="_blank" class="text-white">m-daghlas@hotmail.com</a></p>
+                  </div>
+              </div>
+              <div class="social-icons col-lg-3 col-md-6 d-flex justify-content-lg-center">
+                <a href="https://wa.link/4uu970"
+                  ><i class="fa-brands fa-whatsapp whatsapp footer--i  me-4"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100054829885862"
+                  ><i class="fa-brands fa-facebook-f facebook footer--i  me-4"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/daghlas_mohammad/?utm_medium=copy_link"
+                  ><i class="fa-brands fa-instagram instagram footer--i  me-4"></i
+                ></a>
+                <a
+                  href="https://www.snapchat.com/add/daghlas87?share_id=QjkxOTU3&locale=ar_PS@numbers=latn"
+                  ><i class="fa-brands fa-snapchat snapchat footer--i "></i
+                ></a>
+              </div>
+             
+          </div>
+      </div>
+      <div
+      class="footer-bottom py-3 bg-black text-white d-flex justify-content-center align-items-center">
+      2023 © COPYRIGHT BY Maher Saif
+</div> 
+  </footer>
+    
+    <!-- end get in touch and footer  -->
+    <a href="#top" class="to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Bootstrap 5.2 JS  -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
